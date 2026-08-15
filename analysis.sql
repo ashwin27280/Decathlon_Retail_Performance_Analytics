@@ -94,7 +94,7 @@ SELECT
     ROUND(SUM(Final_Amount),2) AS Revenue,
     ROUND(AVG(Final_Amount),2) AS Average_Order_Value,
     ROUND(SUM(Profit),2) AS Profit
-FROM Decathlon_Sales
+FROM sales
 GROUP BY Membership_Type
 ORDER BY Revenue DESC;
 
